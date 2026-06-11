@@ -1,0 +1,25 @@
+{
+  "$description": "Border radius design tokens — Takeat. Rounds element corners to soften the UI and improve usability.",
+  "borderRadius": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": "Small buttons and details."
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": "Medium buttons, inputs, text fields, small cards, dropdowns, banners, tags, etc."
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": "Large buttons, medium cards, modals, etc."
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Large cards, modals, etc."
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "$description": "Shadow design tokens — Takeat. Elevation scale from 01 (lowest) to 05 (highest). Use 02 as the default for most items; use 01 for small items and components requiring emphasis; use the larger ones (03–05) for bigger components.",
+  "shadow": {
+    "01": {
+      "$type": "shadow",
+      "$description": "Small items and components requiring emphasis.",
+      "$value": [
+        { "color": "rgba(0, 0, 0, 0.14)", "offsetX": "0px", "offsetY": "1px", "blur": "2px", "spread": "0px" },
+        { "color": "rgba(0, 0, 0, 0.12)", "offsetX": "0px", "offsetY": "0px", "blur": "2px", "spread": "0px" }
+      ]
+    },
+    "02": {
+      "$type": "shadow",
+      "$description": "Default — used on most items.",
+      "$value": [
+        { "color": "rgba(0, 0, 0, 0.14)", "offsetX": "0px", "offsetY": "2px", "blur": "4px", "spread": "0px" },
+        { "color": "rgba(0, 0, 0, 0.12)", "offsetX": "0px", "offsetY": "0px", "blur": "2px", "spread": "0px" }
+      ]
+    },
+    "03": {
+      "$type": "shadow",
+      "$description": "Bigger components.",
+      "$value": [
+        { "color": "rgba(0, 0, 0, 0.14)", "offsetX": "0px", "offsetY": "4px", "blur": "8px", "spread": "0px" },
+        { "color": "rgba(0, 0, 0, 0.12)", "offsetX": "0px", "offsetY": "0px", "blur": "2px", "spread": "0px" }
+      ]
+    },
+    "04": {
+      "$type": "shadow",
+      "$description": "Bigger components.",
+      "$value": [
+        { "color": "rgba(0, 0, 0, 0.14)", "offsetX": "0px", "offsetY": "8px", "blur": "16px", "spread": "0px" },
+        { "color": "rgba(0, 0, 0, 0.12)", "offsetX": "0px", "offsetY": "0px", "blur": "2px", "spread": "0px" }
+      ]
+    },
+    "05": {
+      "$type": "shadow",
+      "$description": "Bigger components — highest elevation.",
+      "$value": [
+        { "color": "rgba(0, 0, 0, 0.14)", "offsetX": "0px", "offsetY": "10px", "blur": "25px", "spread": "0px" },
+        { "color": "rgba(0, 0, 0, 0.2)", "offsetX": "0px", "offsetY": "0px", "blur": "8px", "spread": "0px" }
+      ]
+    }
+  }
+}

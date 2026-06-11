@@ -1,0 +1,74 @@
+{
+  "$description": "Typography design tokens — Poppins type scale (Title · Body · Label · Details). Each size has every supported weight as its own variant.",
+  "fontFamily": {
+    "sans": { "value": "Poppins, sans-serif", "type": "fontFamily" }
+  },
+  "fontWeight": {
+    "regular": { "value": 400, "type": "fontWeight" },
+    "medium": { "value": 500, "type": "fontWeight" },
+    "semibold": { "value": 600, "type": "fontWeight" },
+    "bold": { "value": 700, "type": "fontWeight" },
+    "extrabold": { "value": 800, "type": "fontWeight" }
+  },
+  "typography": {
+    "title": {
+      "large": {
+        "regular": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "22px", "lineHeight": "28px", "letterSpacing": "0px", "fontWeight": 400 } },
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "22px", "lineHeight": "28px", "letterSpacing": "0px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "22px", "lineHeight": "28px", "letterSpacing": "0px", "fontWeight": 600 } },
+        "bold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "22px", "lineHeight": "28px", "letterSpacing": "0px", "fontWeight": 700 } }
+      },
+      "medium": {
+        "regular": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "18px", "lineHeight": "24px", "letterSpacing": "0px", "fontWeight": 400 } },
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "18px", "lineHeight": "24px", "letterSpacing": "0px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "18px", "lineHeight": "24px", "letterSpacing": "0px", "fontWeight": 600 } },
+        "bold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "18px", "lineHeight": "24px", "letterSpacing": "0px", "fontWeight": 700 } }
+      },
+      "small": {
+        "regular": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "16px", "lineHeight": "24px", "letterSpacing": "0.15px", "fontWeight": 400 } },
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "16px", "lineHeight": "24px", "letterSpacing": "0.15px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "16px", "lineHeight": "24px", "letterSpacing": "0.15px", "fontWeight": 600 } },
+        "bold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "16px", "lineHeight": "24px", "letterSpacing": "0.15px", "fontWeight": 700 } }
+      }
+    },
+    "body": {
+      "large": {
+        "regular": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "16px", "lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": 400 } },
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "16px", "lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "16px", "lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": 600 } }
+      },
+      "medium": {
+        "regular": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "14px", "lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": 400 } },
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "14px", "lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "14px", "lineHeight": "20px", "letterSpacing": "0.25px", "fontWeight": 600 } }
+      },
+      "small": {
+        "regular": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "12px", "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": 400 } },
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "12px", "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "12px", "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": 600 } }
+      }
+    },
+    "label": {
+      "large": {
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "14px", "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "14px", "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": 600 } },
+        "bold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "14px", "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": 700 } }
+      },
+      "medium": {
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "12px", "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "12px", "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": 600 } },
+        "bold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "12px", "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": 700 } }
+      },
+      "small": {
+        "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "11px", "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": 500 } },
+        "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "11px", "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": 600 } },
+        "extrabold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "11px", "lineHeight": "16px", "letterSpacing": "0.5px", "fontWeight": 800 } }
+      }
+    },
+    "details": {
+      "medium": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "8px", "lineHeight": "12px", "letterSpacing": "0.4px", "fontWeight": 500 } },
+      "semibold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "8px", "lineHeight": "12px", "letterSpacing": "0.4px", "fontWeight": 600 } },
+      "bold": { "type": "typography", "value": { "fontFamily": "Poppins, sans-serif", "fontSize": "8px", "lineHeight": "12px", "letterSpacing": "0.4px", "fontWeight": 700 } }
+    }
+  }
+}

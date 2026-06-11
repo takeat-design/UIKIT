@@ -1,0 +1,88 @@
+{
+  "$description": "Color design tokens — Takeat. Scales run 100 (lightest) → 700 (darkest); the 'default' step is the principal color of each palette (marked 'Default' in Figma).",
+  "color": {
+    "primary": {
+      "$description": "Cores Padrão Takeat — used across most of the system (Dashboard, GM, GD, Clube, Totem, etc).",
+      "red": {
+        "$description": "Vermelho Takeat (Principal)",
+        "100": { "$type": "color", "$value": "#FAE8E9" },
+        "200": { "$type": "color", "$value": "#E5A1A4" },
+        "300": { "$type": "color", "$value": "#DB6E72" },
+        "400": { "$type": "color", "$value": "#D13F45" },
+        "500": { "$type": "color", "$value": "#C8131B" },
+        "600": { "$type": "color", "$value": "#94090F" },
+        "700": { "$type": "color", "$value": "#610206" },
+        "default": { "$type": "color", "$value": "{color.primary.red.500}" }
+      },
+      "green": {
+        "$description": "Verde",
+        "100": { "$type": "color", "$value": "#EBFAF8" },
+        "200": { "$type": "color", "$value": "#BCE3DE" },
+        "300": { "$type": "color", "$value": "#89D9CF" },
+        "400": { "$type": "color", "$value": "#59CFC1" },
+        "500": { "$type": "color", "$value": "#2EC9B7" },
+        "600": { "$type": "color", "$value": "#1D9688" },
+        "700": { "$type": "color", "$value": "#0F635A" },
+        "default": { "$type": "color", "$value": "{color.primary.green.500}" }
+      },
+      "blue": {
+        "$description": "Azul",
+        "100": { "$type": "color", "$value": "#E6F7FF" },
+        "200": { "$type": "color", "$value": "#99DFFF" },
+        "300": { "$type": "color", "$value": "#66CFFF" },
+        "400": { "$type": "color", "$value": "#33BFFF" },
+        "500": { "$type": "color", "$value": "#01AFFF" },
+        "600": { "$type": "color", "$value": "#018CCC" },
+        "700": { "$type": "color", "$value": "#016999" },
+        "default": { "$type": "color", "$value": "{color.primary.blue.500}" }
+      },
+      "yellow": {
+        "$description": "Amarelo",
+        "100": { "$type": "color", "$value": "#FFF8EB" },
+        "200": { "$type": "color", "$value": "#FFEBC8" },
+        "300": { "$type": "color", "$value": "#FFD894" },
+        "400": { "$type": "color", "$value": "#FFC561" },
+        "500": { "$type": "color", "$value": "#FFB32F" },
+        "600": { "$type": "color", "$value": "#CC8C1D" },
+        "700": { "$type": "color", "$value": "#99670F" },
+        "default": { "$type": "color", "$value": "{color.primary.yellow.500}" }
+      }
+    },
+    "tertiary": {
+      "$description": "Cores Terciárias — used only in details or where a color outside the standard palette is needed.",
+      "orange": {
+        "$description": "Laranja",
+        "100": { "$type": "color", "$value": "#FFF2EA" },
+        "200": { "$type": "color", "$value": "#FFD8BD" },
+        "300": { "$type": "color", "$value": "#FFB98A" },
+        "400": { "$type": "color", "$value": "#FF9B57" },
+        "500": { "$type": "color", "$value": "#FF7D24" },
+        "600": { "$type": "color", "$value": "#CC5F14" },
+        "700": { "$type": "color", "$value": "#994409" },
+        "default": { "$type": "color", "$value": "{color.tertiary.orange.500}" }
+      },
+      "green2": {
+        "$description": "Verde 2",
+        "100": { "$type": "color", "$value": "#EAF7EE" },
+        "200": { "$type": "color", "$value": "#A5C7AF" },
+        "300": { "$type": "color", "$value": "#77BD8B" },
+        "400": { "$type": "color", "$value": "#4DB26A" },
+        "500": { "$type": "color", "$value": "#27A84C" },
+        "600": { "$type": "color", "$value": "#167532" },
+        "700": { "$type": "color", "$value": "#0A421A" },
+        "default": { "$type": "color", "$value": "{color.tertiary.green2.500}" }
+      }
+    },
+    "neutral": {
+      "$description": "Cores Neutras — base palette for any project/screen. Avoid pure black (#000000) in large areas; use it only in details.",
+      "white": { "$type": "color", "$value": "#FFFFFF" },
+      "50": { "$type": "color", "$value": "#F6F6F6" },
+      "100": { "$type": "color", "$value": "#EDEDED" },
+      "200": { "$type": "color", "$value": "#C6C6C6" },
+      "300": { "$type": "color", "$value": "#7A7A7A" },
+      "400": { "$type": "color", "$value": "#545454" },
+      "500": { "$type": "color", "$value": "#222222" },
+      "black": { "$type": "color", "$value": "#000000" }
+    }
+  }
+}

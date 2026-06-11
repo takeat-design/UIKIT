@@ -1,0 +1,15 @@
+{
+  "$description": "Spacing design tokens — Takeat. Apply spacing from the inside out, going from the smallest to the largest value. Use 2px and 4px for smaller components; 8px and 12px as the defaults for most cards; 16px and up generally for the padding of modals and other large components.",
+  "spacing": {
+    "0.5": { "$type": "dimension", "$value": "2px", "$description": "Smaller components — tight inner spacing." },
+    "1": { "$type": "dimension", "$value": "4px", "$description": "Smaller components — fine details." },
+    "2": { "$type": "dimension", "$value": "8px", "$description": "Default for most cards." },
+    "3": { "$type": "dimension", "$value": "12px", "$description": "Default for most cards." },
+    "4": { "$type": "dimension", "$value": "16px", "$description": "Padding for modals and other large components." },
+    "5": { "$type": "dimension", "$value": "20px", "$description": "Large components." },
+    "6": { "$type": "dimension", "$value": "24px", "$description": "Large components." },
+    "8": { "$type": "dimension", "$value": "32px", "$description": "Large components and section spacing." },
+    "10": { "$type": "dimension", "$value": "40px", "$description": "Large layout spacing." },
+    "12": { "$type": "dimension", "$value": "48px", "$description": "Large layout spacing." }
+  }
+}

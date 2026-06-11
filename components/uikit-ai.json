@@ -1,0 +1,811 @@
+{
+  "Intro": {
+    "page": "Icons",
+    "category": "Icons",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/gbh/bNM/m9BvEIYOWRPKNFdD/1961_9219.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0036a154accdf3f03c71615805560817d8fe1f89b575ab1e959c57b369cf6ed7",
+    "variants": {}
+  },
+  "Text Field": {
+    "page": "Text Field",
+    "category": "Forms",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/Jis/0Ea/yKbsy8q9A74k6JJ3/1413_2653.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f486d48a95c54f25f2b914bf232c2039501e9d2f16ef7979905e4e59fd274241",
+    "variants": {
+      "State": [
+        "Pressed",
+        "Disabled",
+        "Rest",
+        "Hover",
+        "Read Only",
+        "Error",
+        "Focused"
+      ],
+      "Style": [
+        "Outlined",
+        "Filled"
+      ],
+      "Info": [
+        "True",
+        "False"
+      ]
+    }
+  },
+  "Radio Button": {
+    "page": "Radio Button",
+    "category": "Actions",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/v5T/aY5/qvPhimBqZPKaEQzF/1026_1394.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a4b1829e67fad3d24b3e82d4ba368f5f5ef7bb77879bd23ab3b8cb51dbc2cbd4",
+    "variants": {
+      "Checked": [
+        "True",
+        "False"
+      ],
+      "Layout": [
+        "Radio + Label Bellow",
+        "Radio + Label After",
+        "Radio"
+      ],
+      "State": [
+        "Hover",
+        "Focused",
+        "Rest",
+        "Disabled"
+      ]
+    }
+  },
+  "Component 3": {
+    "page": "Cards",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/gZr/RP7/78Sy2HJeeY8krZhF/1659_4286.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d3c641c5ece475323471a221a2d64a34252ce1f62735945c98bacbd9902ecafb",
+    "variants": {
+      "Property 1": [
+        "Frame 1182",
+        "Frame 1181",
+        "Frame 1178"
+      ]
+    }
+  },
+  "Component 7": {
+    "page": "Badges",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/T5g/xNQ/nV11KXL54PesBUhc/1364_961.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cbb29ce432639080769a23eca24dbe02305585cbcbb351f6f9e4a2b25e817f76",
+    "variants": {
+      "Size": [
+        "Large",
+        "Medium",
+        "Extra Small",
+        "Small"
+      ]
+    }
+  },
+  "Component 4": {
+    "page": "Cards",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/TUY/5FW/oqDJtShQ7FRFfvQz/1659_4284.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3746dc11173e3a96de31a9ece5e0433bb73913da8cd32f41302d3a66e9228539",
+    "variants": {
+      "Property 1": [
+        "Frame 1177",
+        "Frame 1180"
+      ]
+    }
+  },
+  "Component 5": {
+    "page": "Cards",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/JlU/Jb8/QsWTiKwABDzkE4IQ/1661_263.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4a09f4594d72d5c9c3f8088f62fd286255c1667c6bab1a2031dd4c1274d8e214",
+    "variants": {
+      "Property 1": [
+        "Produto",
+        "Produto + Add"
+      ]
+    }
+  },
+  "Sub elemento": {
+    "page": "According",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/oKz/WQL/z9zbCzPIqw4fmeYJ/1542_483.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e6f21242f64dfa78a6a0d3d149ab3121ed4b0f85c2f6c4768a93edfa28938eda",
+    "variants": {
+      "Style": [
+        "End",
+        "Beggining",
+        "Middle",
+        "Sub elemento 2",
+        "Divider",
+        "Sub elemento"
+      ]
+    }
+  },
+  "Sliders": {
+    "page": "Slider",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/81h/BkT/n2i3pSpHtXA1VQVo/2094_4500.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f6b27f405a1a9e91476a69a85c292b08c1876fb48fb3ffbb9de6a140524105d8",
+    "variants": {}
+  },
+  "Divider List": {
+    "page": "List",
+    "category": "Data Display",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/NPR/aay/nHhoUuGcNoxfuQZ5/2013_8871.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3d732ec6879d0fb54be62dc880a090a86945d8a6846693afaccda7322f028f4e",
+    "variants": {
+      "Property 1": [
+        "Divider",
+        "Divider + Label"
+      ]
+    }
+  },
+  "Dividers": {
+    "page": "Dividers",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/O2g/hzF/RQoJVsH4adIK1Oa1/990_1676.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=dc8dc84a4e377bfaedf684733c268f15841086d1320cc3a28b2d2122a7f9b13f",
+    "variants": {}
+  },
+  "Segmented button 1": {
+    "page": "Buttons",
+    "category": "Actions",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/CiH/k82/kwm16pRAaRvYfxTI/755_2340.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1d8ab0e9310ba629898476b9e305fff2c50a7a578ebf9a6f8924d3fe7f32e0eb",
+    "variants": {
+      "State": [
+        "Hover",
+        "Rest",
+        "Disabled",
+        "Focused",
+        "Selected"
+      ],
+      "Style": [
+        "Default",
+        "Left Corner",
+        "Right Corner"
+      ],
+      "Icon": [
+        "True",
+        "False"
+      ],
+      "Label": [
+        "False",
+        "True"
+      ],
+      "Select": [
+        "False",
+        "True"
+      ]
+    }
+  },
+  "Header + Step": {
+    "page": "Modal",
+    "category": "Feedback",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/S1z/xcL/syiPsgw5SDIc16NE/1711_1632.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7d54a40c4de3fc793c860e6cdd00b1d05de87ec69eb5966016fe75fb6190ad3b",
+    "variants": {
+      "Property 1": [
+        "3",
+        "1",
+        "2"
+      ]
+    }
+  },
+  "Spinner": {
+    "page": "Spinner",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/mon/zyd/e1PqI2I0MlNGCW5r/1800_1384.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6b090ab7a8785f39113d452a2c338432067c06fc95ade864d3bb247ac3b64a60",
+    "variants": {
+      "Property 1": [
+        "Spinner",
+        "Spinner + Label Right",
+        "Spinner + Label Under"
+      ]
+    }
+  },
+  "Botões do menu": {
+    "page": "Menus",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/hsR/YoK/QhjyRvRJ6WEKGpgO/3684_2997.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e86057b8fde4d4668ffca14d15329e883960737b7d07c60383462b1277f60d79",
+    "variants": {
+      "Property 1": [
+        "Hover/Pressing",
+        "Selected",
+        "Rest"
+      ]
+    }
+  },
+  "List": {
+    "page": "Menus",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/UFy/2V0/Xxe2ouMGqJ7aysB7/3684_3025.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a7fc5f534375c5a1255e091bb9bbaf2732c00716f2c402c907f412ea6d68874e",
+    "variants": {
+      "Property 1": [
+        "Hover/Pressing",
+        "Rest",
+        "Selected"
+      ],
+      "State": [
+        "Selected",
+        "Disabled",
+        "Hover",
+        "Focused",
+        "Rest"
+      ],
+      "Icon Left": [
+        "True",
+        "False"
+      ],
+      "Icon Right": [
+        "False",
+        "True"
+      ],
+      "Style": [
+        "Normal",
+        "Subtitle"
+      ]
+    }
+  },
+  "Floating menu": {
+    "page": "Menus",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/1tB/hDD/0pFWJ9iSnTfSdjLp/3684_3029.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=76d4347901e565a5fef6114c56f08052b7acc39fb20edf60bb7b96de6895a1f0",
+    "variants": {}
+  },
+  "Elemento": {
+    "page": "According",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/x0U/fkB/eSF4BxY8qj3hAc66/1500_729.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a8ea99e478a04762356cd9c0e87c8a4636cab25c1be661e0dedb8cd1da819f27",
+    "variants": {
+      "Style": [
+        "Open",
+        "Close"
+      ]
+    }
+  },
+  "Header + Icon": {
+    "page": "Modal",
+    "category": "Feedback",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/piD/wwX/Da4eRXyH7h3zPKng/2136_1725.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9eefa8f8d89faef05e774028cdcfb91466716a5785463b991b9cd2032d844a87",
+    "variants": {
+      "Close": [
+        "True",
+        "False"
+      ]
+    }
+  },
+  "Header": {
+    "page": "Modal",
+    "category": "Feedback",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/quY/pUV/TExLBXOVzvwgPbeD/1710_1826.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e3ebfe40a9d2c209a63a73093415dfb4b38a9043dec668809b6ac63a8bf6664a",
+    "variants": {
+      "Title": [
+        "False",
+        "True"
+      ],
+      "Subtitle": [
+        "False",
+        "True"
+      ],
+      "Close": [
+        "False",
+        "True"
+      ]
+    }
+  },
+  "Link": {
+    "page": "Hiperlink",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/fDY/mIb/28XplxiWtL1bkPIl/2086_662.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1279de7d8c267c3d1f2c0faa30f183ca32f9a5c8f5d5ffc87298570361dac535",
+    "variants": {
+      "State": [
+        "Focused",
+        "Hover",
+        "Disabled",
+        "Rest"
+      ],
+      "Icon": [
+        "False",
+        "True"
+      ]
+    }
+  },
+  "Group 1": {
+    "page": "Efeito de prototipagem",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/vxU/phY/I0SFIgferuRgD09X/2548_443.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=835e5cc0345bdce9e8e274a8cce0a0013ea9623686e2f4a2b2524271cd5c6d65",
+    "variants": {
+      "Property 1": [
+        "Active",
+        "Enable"
+      ]
+    }
+  },
+  "Tooltip": {
+    "page": "Tooltip",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/TTa/HSs/6wRMMG8wFVhon1wu/2094_4611.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=71d0eb77d49e796378ecba4765a7ded5553c971574b8329c4621d7e27a673aea",
+    "variants": {
+      "Style": [
+        "Light",
+        "Dark"
+      ],
+      "Arrow": [
+        "Down",
+        "No Arrow",
+        "Up"
+      ]
+    }
+  },
+  "Clube": {
+    "page": "Logo",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/GVU/JZI/Bp6A2tKroqWKxW7m/1858_310.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2c535ad4033897bde744d2efac91d6ea98e43abe5dd979aacd24309e738d7372",
+    "variants": {}
+  },
+  "Multilojas": {
+    "page": "Logo",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/zNl/rwE/GJFl5AIlzjnZkte6/2080_3380.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f95edcf7999838eb45afc8f2bce11044163a7392fc437305982f1f3b555a8213",
+    "variants": {}
+  },
+  "Área do Gestor": {
+    "page": "Logo",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/yAd/bNT/VxfUFJUPynkNutoy/2080_3369.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d82d2ed6bc248f7530dd03b7a41601dad0b6c0d10ee2cfb9e7b6354b29082d7b",
+    "variants": {}
+  },
+  "Texto + Logo 2": {
+    "page": "Logo",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/pTG/HVJ/FvklY7VE1qcQ2WpF/1772_4145.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3b636eda69ee961ed7695939acaf4c98d5280a1b0eec47489151c7dfc02070db",
+    "variants": {}
+  },
+  "Component 1": {
+    "page": "Banner",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/wWj/dmK/uCuSr4fO5LyDM8HU/817_5130.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=678eaa564b9104bae169a09c7224784b21f8c171878e257ff8c71d8cad0aafd0",
+    "variants": {
+      "State": [
+        "Confirmação",
+        "Erro",
+        "Atenção",
+        "Informação",
+        "Pressed",
+        "Disabled",
+        "Rest",
+        "Hover"
+      ],
+      "Close": [
+        "False",
+        "True"
+      ],
+      "Title": [
+        "False",
+        "True"
+      ],
+      "Button": [
+        "False",
+        "True"
+      ],
+      "Style": [
+        "Transparent",
+        "Filled",
+        "Filled + Outline",
+        "Outline"
+      ],
+      "Icon": [
+        "True",
+        "False"
+      ],
+      "Label": [
+        "True",
+        "False"
+      ],
+      "Property 1": [
+        "Rest",
+        "Hover",
+        "Pressed",
+        "Frame 19",
+        "Frame 18",
+        "Frame 24",
+        "Frame 34",
+        "Frame 17",
+        "Frame 16",
+        "Frame 32",
+        "Frame 10",
+        "Frame 27",
+        "Frame 33",
+        "Frame 30",
+        "Frame 22",
+        "Frame 14",
+        "Frame 20",
+        "Frame 21",
+        "Frame 29",
+        "Frame 31",
+        "Frame 26",
+        "Frame 25",
+        "Frame 23",
+        "Frame 28",
+        "Frame 11",
+        "Frame 12",
+        "Frame 35",
+        "Frame 15",
+        "Frame 13"
+      ],
+      "Type": [
+        "Novo",
+        "Pedido de ajuda",
+        "Finalizado",
+        "Cancelado",
+        "Em andamento",
+        "Fechamento"
+      ],
+      "Icon Left": [
+        "False",
+        "True"
+      ],
+      "Icon Right": [
+        "True",
+        "False"
+      ]
+    }
+  },
+  "Switch": {
+    "page": "Switch",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/4P2/hNu/6SXSrH3uLDj8lDfE/949_4974.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1909015856a888c70b4b2f6760eccee7ca57c7a4c6bcf85bb98b1017c3649b0b",
+    "variants": {
+      "Checked": [
+        "False",
+        "True"
+      ],
+      "Layout": [
+        "Switch",
+        "Switch+Label Left",
+        "Switch+Label Right",
+        "Switch+Label Above"
+      ],
+      "State": [
+        "Rest",
+        "Focused",
+        "Disabled",
+        "Hover"
+      ]
+    }
+  },
+  "Logo": {
+    "page": "Logo",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/681/o8v/uejifCKyK2o6JGjr/1825_626.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fe4591ffb87b01f681ffbfea9bfbbabd71713e6d9714324e722c92be0c298eb6",
+    "variants": {}
+  },
+  "Texto + Logo 1": {
+    "page": "Logo",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/f59/OSx/p2X39w7OGbpWsom4/1772_4146.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ca922b74941f2b8b2c497cf252fd07e1cad12179f1eba0445c940364bea0c7ec",
+    "variants": {}
+  },
+  "Button": {
+    "page": "Buttons",
+    "category": "Actions",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/3VX/Z1q/UfToNABWHG7jIZCF/3185_1016.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5077694618912ebcc33817c2cf089268ac16884f522f6f2677ade03c6fd3404c",
+    "variants": {
+      "State": [
+        "Rest",
+        "Hover",
+        "Focus",
+        "Pressed",
+        "Disabled"
+      ],
+      "Style": [
+        "Outlined",
+        "Filled",
+        "Tonal",
+        "Text Button 1",
+        "Text Button 2"
+      ],
+      "Size": [
+        "Small",
+        "Medium",
+        "Totem",
+        "Mobile/Tablet",
+        "Large"
+      ],
+      "Show Icon": [
+        "True",
+        "False"
+      ],
+      "Label": [
+        "False",
+        "True"
+      ]
+    }
+  },
+  "Segmented List": {
+    "page": "List",
+    "category": "Data Display",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/emS/L6n/JilzqZZqgu9JW4ly/925_273.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7b5cfe3b48a87c2cd4eaa86eca341afe2e03bf51e67056a535ecba9abaf8e610",
+    "variants": {
+      "State": [
+        "Rest",
+        "Hover",
+        "Focused",
+        "Selected",
+        "Disabled"
+      ],
+      "Type": [
+        "2",
+        "1"
+      ],
+      "Property": [
+        "Middle",
+        "End",
+        "Beginning"
+      ]
+    }
+  },
+  "Calendar Input": {
+    "page": "Calendar",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/HJF/mJx/DujKZVzn2iB4htDQ/1799_3031.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7e98163fb9918709eac87fbf15d11ef527b96d2ff1e9c7330f22763112e76565",
+    "variants": {
+      "Label": [
+        "True",
+        "False"
+      ],
+      "Info": [
+        "True",
+        "False"
+      ],
+      "Type": [
+        "2 Dates + Time",
+        "Year",
+        "Date",
+        "Month",
+        "2 Dates"
+      ],
+      "Disabled": [
+        "False",
+        "True"
+      ]
+    }
+  },
+  "Input": {
+    "page": "Input",
+    "category": "Forms",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/jBX/lO2/perHTqoo8T7bWLwO/2664_4800.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f2d348b44c6254d99f0304737d9599494a8b69375aa5d5e9203e80d407ca3fca",
+    "variants": {
+      "State": [
+        "Hover",
+        "Disabled",
+        "Active",
+        "Rest",
+        "Error",
+        "Focused",
+        "Read Only"
+      ],
+      "Label": [
+        "False",
+        "True"
+      ],
+      "Info": [
+        "False",
+        "True"
+      ],
+      "Placeholder": [
+        "False",
+        "True"
+      ],
+      "Style": [
+        "Outlined",
+        "Filled"
+      ],
+      "Icon right": [
+        "False",
+        "True"
+      ],
+      "Icon left": [
+        "False",
+        "True"
+      ]
+    }
+  },
+  "Spin Button": {
+    "page": "Spin Button",
+    "category": "Actions",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/ury/SdP/OYVQtMSoECzMy2qp/1761_2550.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=da52ea6f8e0f0c59af6a518dfa9aff382dec827e24a3d18d0da4e63c5ca8f82d",
+    "variants": {
+      "State": [
+        "Pressed",
+        "Read Only",
+        "Rest",
+        "DIsabled",
+        "Error",
+        "Focus",
+        "Hover"
+      ],
+      "Label": [
+        "True",
+        "False"
+      ],
+      "Info": [
+        "False",
+        "True"
+      ],
+      "Style": [
+        "Outlined",
+        "Filled"
+      ]
+    }
+  },
+  "Notification toast": {
+    "page": "Toast and Popup",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/Xty/SKG/9bYNVVj4qoKWxdkn/3672_104.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d6a69ceae6aee05f34a88e020930b598c93e822f7d136da3b83351d3f93abdbd",
+    "variants": {
+      "Close": [
+        "True",
+        "False"
+      ],
+      "Subtitle": [
+        "True",
+        "False"
+      ],
+      "Button": [
+        "False",
+        "True"
+      ]
+    }
+  },
+  "Cabeçalho Dash": {
+    "page": "Menus",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/mo7/LAc/SusjpD2OTroUbPjr/3684_4534.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=796fec863c08a33eb5a3b8698a06fd3fe1977236a2e928c5218f2f7a94b3124d",
+    "variants": {}
+  },
+  "Símbolo": {
+    "page": "Logo",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/w8E/vUN/PXJZK1pVSD8gwqSu/1825_629.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=59ddab0daacd92b9605556674439908eab7913a1e9d7c99f294435beaf9c49c1",
+    "variants": {}
+  },
+  "Checkbox": {
+    "page": "Checkbox",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/4yV/4Yc/3E8GoEbZrUoZo6vR/1037_2715.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=458440bcbd48fc9e1c84cc204def72502bba34473479e58048cf7d4657dd63c9",
+    "variants": {
+      "Checked": [
+        "True",
+        "False"
+      ],
+      "State": [
+        "Rest",
+        "Focused",
+        "Disabled"
+      ],
+      "Label": [
+        "False",
+        "True"
+      ],
+      "Caption": [
+        "False",
+        "True"
+      ]
+    }
+  },
+  "Radio and Checkbox": {
+    "page": "List",
+    "category": "Data Display",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/T7u/1MB/6oVaVa5X4t8zYCJb/881_562.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e78847c81544e6a995d91077efdecbd58cf6480a27063701f2f70e657de3de8b",
+    "variants": {
+      "State": [
+        "Hover",
+        "Rest",
+        "Selected",
+        "Disabled",
+        "Focused"
+      ],
+      "Style": [
+        "Checkbox",
+        "Radio"
+      ]
+    }
+  },
+  "Footer": {
+    "page": "Modal",
+    "category": "Feedback",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/Vcp/2B7/OxpzIcQW0pZMZ3ph/1710_1687.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1efa9ec2db2fca60f4071be6629f21558127893882a847a8b243b61b888821cd",
+    "variants": {
+      "Button Type": [
+        "Checkbox + 1 Button",
+        "2 buttons separated",
+        "Checkbox + 2 buttons",
+        "2 buttons right",
+        "Blank",
+        "1 button right",
+        "1 button left"
+      ],
+      "Divider": [
+        "True",
+        "False"
+      ]
+    }
+  },
+  "Navigation": {
+    "page": "Menus",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/Fey/M6e/kN19RLW5RVUIzWQ6/2080_3514.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e9ac68c6d1c80b3725646c9fda250598921b1109d49bac343aef06c8464708fa",
+    "variants": {}
+  },
+  "Component 2": {
+    "page": "Cards",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/8qK/Hlc/Cdk6tWzLBNbKUHWB/1658_3162.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=19322b3a579d95d18e839c056bad09b57696df4485d4be4ec2596971cb715f66",
+    "variants": {
+      "Property 1": [
+        "Pedido novo",
+        "Pedido de ajuda",
+        "Cancelado",
+        "Em andamento",
+        "Mesa fechada 1",
+        "Fechamento de mesa",
+        "Mesa Fechada 2"
+      ]
+    }
+  },
+  "Buscar": {
+    "page": "Menus",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/TiG/Ych/KzduQTZQT6ZwFztJ/3684_3005.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1568384f30bca320e0c8f94879cadcfae65ffdd158cf43a81962802b3894e318",
+    "variants": {}
+  },
+  "Frame 17": {
+    "page": "Buttons",
+    "category": "Actions",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/IkX/zKQ/dKkys163qIwntd7A/4319_1499.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fc29fe8e70a00d772a2fcfc8dfc993b6ce4066f415a7888d62b6393d041ab2fb",
+    "variants": {}
+  },
+  "DASHBOARD FRAME": {
+    "page": "Layout",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/IIN/ZWH/CPUnHoG5TjpHFZyR/3684_7315.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ad3b037167b3f5081bd57af0ef20993b8081102421a1a4e5af67daca5cc8667b",
+    "variants": {}
+  },
+  "Operação": {
+    "page": "Menus",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/uec/rFG/XTBegl7W8Y12QSdQ/3684_3042.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=61d4fb9d7f58687e75c71b7ed24f9a37901203fe88e522f6011e0338dd35de88",
+    "variants": {
+      "Property 1": [
+        "Rest",
+        "Hover/Pressing",
+        "Selected/Open"
+      ]
+    }
+  },
+  "Sidebar Open": {
+    "page": "Menus",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/ysQ/OUf/B4zGaP6qzfAnCmfU/3684_2974.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3aef64d0753987e7737a674a9105f3494151d74f4d4d6999857f63d3133add23",
+    "variants": {
+      "Property 1": [
+        "Sidebar closed",
+        "Sidebar Open"
+      ]
+    }
+  },
+  "Calendar": {
+    "page": "Calendar",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/Vu2/cG7/7TlraUITaJqhYhDn/1799_5089.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2ec5f5e98a099018f8eab6da78c8cf438fc28b19fc37dfa2303c86498a47af2c",
+    "variants": {
+      "Type": [
+        "2 dates + Time  + Filter",
+        "2 dates + Time",
+        "2 Dates",
+        "Month",
+        "Date",
+        "Year"
+      ],
+      "Dates selected": [
+        "True",
+        "False"
+      ]
+    }
+  },
+  "Cover": {
+    "page": "Cover",
+    "category": "Other",
+    "thumbnail": "https://s3-alpha.figma.com/checkpoints/0Gf/Uxw/j663R6MrplyodM5M/1985_16258.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC3OWBHO3A%2F20260611%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260611T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ac25a93b11fac5c074ba0b509dccf85da828e47667e6d42468997855142ed7dc",
+    "variants": {}
+  }
+}

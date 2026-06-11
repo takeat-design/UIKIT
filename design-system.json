@@ -1,0 +1,13 @@
+{
+  "product": "Dashboard",
+  "version": "1.0.0",
+  "description": "Official Dashboard Design System",
+  "components": "./components/uikit-ai.json",
+  "tokens": {
+    "colors": "./tokens/colors.json",
+    "typography": "./tokens/typography.json",
+    "spacing": "./tokens/spacing.json",
+    "radius": "./tokens/radius.json",
+    "shadows": "./tokens/shadows.json"
+  }
+}
