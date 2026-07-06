@@ -1,13 +1,13 @@
 {
   "product": "Dashboard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Official Dashboard Design System",
-  "components": "./components/uikit-ai.json",
+  "components": "https://raw.githubusercontent.com/takeat-design/UIKIT/main/components/uikit-ai.json",
   "tokens": {
-    "colors": "./tokens/colors.json",
-    "typography": "./tokens/typography.json",
-    "spacing": "./tokens/spacing.json",
-    "radius": "./tokens/radius.json",
-    "shadows": "./tokens/shadows.json"
+    "colors": "https://raw.githubusercontent.com/takeat-design/UIKIT/main/tokens/colors.json",
+    "typography": "https://raw.githubusercontent.com/takeat-design/UIKIT/main/tokens/typography.json",
+    "spacing": "https://raw.githubusercontent.com/takeat-design/UIKIT/main/tokens/spacing.json",
+    "radius": "https://raw.githubusercontent.com/takeat-design/UIKIT/main/tokens/radius.json",
+    "shadows": "https://raw.githubusercontent.com/takeat-design/UIKIT/main/tokens/shadows.json"
   }
 }
