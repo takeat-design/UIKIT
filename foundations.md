@@ -8,6 +8,54 @@ Source of truth for building Takeat product interfaces. Whenever there's a choic
 - Spacing, grid, and radius follow a fixed scale (8pt base). Never design outside the grid.
 - Dark mode is supported via the `Colors` variable collection (Light/Dark modes). Semantic tokens (`surface/*`, `text/*`, `stroke/*`, `brand/*`) remap automatically per mode. Color family primitives (`red/*`, `teal/*`, `neutral/*`, etc.) currently share the same values across both modes — the semantic layer handles the mode-switching.
 
+# Brand Assets
+
+## Takeat Logo
+
+The Takeat logo is an official brand asset and must always be used from the SVG files provided in this repository.
+
+### Full Logo
+
+Use the full Takeat logo when the brand name should be explicitly displayed.
+
+- **Light backgrounds:** `assets/takeat-logo.svg`
+- **Dark backgrounds:** `assets/takeat-logo-white.svg`
+
+### Takeat Icon
+
+Use the Takeat icon when the brand needs to be represented without the full wordmark, such as in compact spaces or where the full logo is not appropriate.
+
+- **Light backgrounds:** `assets/takeat-icon.svg`
+- **Dark backgrounds:** `assets/takeat-icon-white.svg`
+
+## Asset Usage Rules
+
+- Use only the official Takeat SVG assets provided in this repository.
+- Do not redraw, recreate, approximate, or generate a new version of the Takeat logo or icon.
+- Do not replace the official logo or icon with text, a different font, or a visually similar symbol.
+- Do not change the colors of the official assets.
+- Do not apply gradients, outlines, shadows, glows, filters, or other visual effects to the logo or icon.
+- Do not distort, stretch, rotate, skew, crop, or otherwise alter the proportions of the assets.
+- Preserve the original aspect ratio of the logo and icon.
+- Use the standard Takeat logo and icon on light backgrounds.
+- Use the white Takeat logo and icon on dark backgrounds when required to maintain sufficient contrast.
+- Do not use the white versions on light backgrounds when the standard versions provide sufficient contrast.
+- When the full brand identity is required, prefer the full logo over the icon.
+- Use the icon only when the available space or context makes the full logo inappropriate.
+- Always ensure sufficient contrast between the asset and its background.
+
+## AI Instructions
+
+When generating or modifying a Takeat interface:
+
+- Use the official SVG assets whenever the Takeat logo or icon is required.
+- Do not generate the Takeat logo or icon using an image generation model.
+- Do not recreate the logo or icon using HTML, CSS, text, or another vector shape when the official asset is available.
+- Select the appropriate asset based on the background:
+  - Light background → standard asset
+  - Dark background → white asset
+- If an official asset is available for the required use case, always use it instead of creating a new variation.
+  
 ---
 
 ## 1. Colors
