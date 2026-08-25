@@ -127,7 +127,7 @@ Dark mode shadows composite at significantly higher opacity than Light — requi
 
 | Variable | Light | Dark | Use |
 |----------|-------|------|-----|
-| `scrim` | `#000000` · 58% | `#000000` · 58% | Modal/overlay backdrop |
+| `scrim` | `#000000` · 20% | `#000000` · 20% | Modal/overlay backdrop |
 
 ### Color Families
 
@@ -345,11 +345,11 @@ Combinations: 5 (nav/CTA) | 2-3 cards per row | 5 (category tabs).
 
 | Token | Value | Use |
 |-------|-------|-----|
-| `radius/4` | 4px | Subtle — inputs, table rows, tooltips, small chips |
-| `radius/8` | 8px | **Default** — the most used; cards, buttons, dropdowns, modals |
-| `radius/12` | 12px | Medium — larger cards, bottom sheets, floating panels, Mobile cards |
-| `radius/16` | 16px | Strong — prominent cards, Mobile modals, Totem product cards |
-| `radius/24` | 24px | Very rounded — large panels, hero cards, decorative containers |
+| `radius/8` | 8px | Subtle — inputs, table rows, tooltips, small chips |
+| `radius/12` | 12px | **Default** — the most used; cards, buttons, dropdowns, modals |
+| `radius/16` | 16px | Medium — larger cards, bottom sheets, floating panels, Mobile cards |
+| `radius/24` | 24px | Strong — prominent cards, Mobile modals, Totem product cards |
+| `radius/32` | 32px | Very rounded — large panels, hero cards, decorative containers |
 | pill (100px+) | 9999px / 50% | Avatars, toggles, status dots, icon containers (not a token) |
 
 **Platform:** `4` (D / M-caution / no-Totem) | `8` (D/M/T) | `12` (D/M/T) | `16` (D/M/T) | `24` (D/T / no-M) | pill (D/M/T)
