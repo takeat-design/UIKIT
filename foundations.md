@@ -6,7 +6,7 @@ Source of truth for building Takeat product interfaces. Whenever there's a choic
 - Prioritize palette colors. For minor adjustments, modify **opacity only**. New variations follow each family's rules.
 - **Poppins** is the sole typeface. Never use sizes or families outside the tokens.
 - Spacing, grid, and radius follow a fixed scale (8pt base). Never design outside the grid.
-- Dark mode is supported via the `Colors` variable collection (Light/Dark modes). Semantic tokens (`surface/*`, `text/*`, `stroke/*`, `brand/*`) remap automatically per mode. Color family primitives (`red/*`, `teal/*`, `neutral/*`, etc.) currently share the same values across both modes — the semantic layer handles the mode-switching.
+- Dark mode is supported via the `Colors` variable collection (Light/Dark modes). Semantic tokens (`surface/*`, `text/*`, `stroke/*`, `brand/*`, `shadow/*`) remap automatically per mode. Color family primitives (`red/*`, `teal/*`, `neutral/*`, etc.) currently share the same values across both modes — the semantic layer handles the mode-switching.
 
 # Brand Assets
 
@@ -55,7 +55,7 @@ When generating or modifying a Takeat interface:
   - Light background → standard asset
   - Dark background → white asset
 - If an official asset is available for the required use case, always use it instead of creating a new variation.
-  
+
 ---
 
 ## 1. Colors
@@ -83,21 +83,25 @@ Semantic tokens map to different raw values depending on the active mode (Light 
 
 #### Text
 
+Dark mode text is white at varying opacity, not a flat color — this is what creates the text hierarchy on dark surfaces (primary reads strongest, disabled reads faintest).
+
 | Variable | Light | Dark | Use |
 |----------|-------|------|-----|
-| `text/primary` | `#222222` | `#FFFFFF` | Primary data values (monetary amounts, percentages, headings); icon vectors/paths |
-| `text/secondary` | `#545454` | `#FFFFFF` | **Primary nav labels & body text** — the most used text color in Dashboard |
-| `text/tertiary` | `#7A7A7A` | `#FFFFFF` | Metadata & caption text (phone numbers, restaurant names, secondary labels) |
-| `text/disabled` | `#C6C6C6` | `#FFFFFF` | Disabled text on all button styles and inactive elements |
-| `text/inverted` | `#FFFFFF` | `#FFFFFF` | Text on dark/colored backgrounds (e.g. label on Filled buttons) |
+| `text/primary` | `#222222` | `#FFFFFF` · 92% | Primary data values (monetary amounts, percentages, headings); icon vectors/paths |
+| `text/secondary` | `#545454` | `#FFFFFF` · 64% | **Primary nav labels & body text** — the most used text color in Dashboard |
+| `text/tertiary` | `#7A7A7A` | `#FFFFFF` · 38% | Metadata & caption text (phone numbers, restaurant names, secondary labels) |
+| `text/disabled` | `#C6C6C6` | `#FFFFFF` · 30% | Disabled text on all button styles and inactive elements |
+| `text/inverted` | `#FFFFFF` | `#FFFFFF` · 100% | Text on dark/colored backgrounds (e.g. label on Filled buttons) |
 
 #### Stroke
 
+Dark mode strokes are white at varying opacity, not a flat color — same principle as Text above.
+
 | Variable | Light | Dark | Use |
 |----------|-------|------|-----|
-| `stroke/subtle` | `#EDEDED` | `#FFFFFF` | Section dividers, full-width divider lines |
-| `stroke/default` | `#C6C6C6` | `#FFFFFF` | Input borders, separators, skeleton placeholders, disabled element borders |
-| `stroke/strong` | `#7A7A7A` | `#FFFFFF` | Default input border at rest; stronger separators |
+| `stroke/subtle` | `#EDEDED` | `#FFFFFF` · 12% | Section dividers, full-width divider lines |
+| `stroke/default` | `#C6C6C6` | `#FFFFFF` · 16% | Input borders, separators, skeleton placeholders, disabled element borders |
+| `stroke/strong` | `#7A7A7A` | `#FFFFFF` · 24% | Default input border at rest; stronger separators |
 
 #### Brand
 
@@ -109,23 +113,25 @@ Semantic tokens map to different raw values depending on the active mode (Light 
 
 #### Shadow
 
+Dark mode shadows composite at significantly higher opacity than Light — required for elevation to stay legible on dark surfaces. See the mode-aware `box-shadow` recipes in §3.
+
 | Variable | Light | Dark | Use |
 |----------|-------|------|-----|
-| `shadow/ambient` | `#000000` | `#000000` | Ambient shadow layer (composited at low opacity) |
-| `shadow/key-sm` | `#000000` | `#000000` | Small key-light shadow |
-| `shadow/key-lg` | `#000000` | `#000000` | Large key-light shadow |
-| `shadow/key-2xl` | `#000000` | `#000000` | Extra-large key-light shadow |
-| `shadow/highlight` | `#FFFFFF` | `#FFFFFF` | Subtle top-edge highlight for elevated surfaces |
+| `shadow/ambient` | `#000000` · 12% | `#000000` · 40% | Ambient shadow layer (composited at low opacity) |
+| `shadow/key-sm` | `#000000` · 14% | `#000000` · 45% | Small key-light shadow — drives `shadow/01`–`02` |
+| `shadow/key-lg` | `#000000` · 14% | `#000000` · 50% | Large key-light shadow — drives `shadow/03`–`04` |
+| `shadow/key-2xl` | `#000000` · 14% | `#000000` · 55% | Extra-large key-light shadow — drives `shadow/05` |
+| `shadow/highlight` | `#FFFFFF` · 0% (off) | `#FFFFFF` · 6% | Subtle top-edge highlight for elevated surfaces — Dark mode only |
 
 #### Scrim
 
 | Variable | Light | Dark | Use |
 |----------|-------|------|-----|
-| `scrim` | `#000000` | `#000000` | Modal/overlay backdrop (used with reduced opacity) |
+| `scrim` | `#000000` · 58% | `#000000` · 58% | Modal/overlay backdrop |
 
 ### Color Families
 
-Each color family exposes a consistent set of variable tokens: `default`, `tint`, `40`, `60`, `80`, and `dark`.
+Each color family exposes a consistent set of variable tokens: `default`, `tint`, `40`, `60`, `80`, and `dark`. `tint`, `40`, `60`, and `80` are **the same base hex as `default`, only at reduced opacity** — `tint` = 10%, `40` = 40%, `60` = 60%, `80` = 80%, `default` = 100%. They are not separate colors, so don't approximate them with a different hex. `dark` is the one token with its own distinct (darker) hex, always at 100% opacity, used for pressed/active states. This pattern holds for all seven families below and is identical across Light and Dark modes.
 
 #### Vermelho Takeat — Red (Primary)
 Primary brand color. Active navigation, primary CTAs, brand surfaces, and operational status indicators.
@@ -349,7 +355,11 @@ Combinations: 5 (nav/CTA) | 2-3 cards per row | 5 (category tabs).
 **Platform:** `4` (D / M-caution / no-Totem) | `8` (D/M/T) | `12` (D/M/T) | `16` (D/M/T) | `24` (D/T / no-M) | pill (D/M/T)
 
 ### Shadows (elevation)
-Elevation scale from 01 (lowest) to 05 (highest). Each level composites two layers. Use `02` as the default; `01` for small items and components needing emphasis; `03`-`05` for larger components.
+Elevation scale from 01 (lowest) to 05 (highest). Each level composites two layers — a tight **key-light** shadow and a soft **ambient** shadow — resolved from the `shadow/*` semantic tokens (§1). Use `02` as the default; `01` for small items and components needing emphasis; `03`-`05` for larger components.
+
+**Dark mode composites at much higher opacity than Light** (ambient 40% vs 12%; key-light 45–55% vs 14%) — always resolve elevation through the semantic tokens rather than hardcoding Light's alpha values, or shadows will be nearly invisible on dark surfaces.
+
+**Light mode**
 
 | Token | Use | box-shadow (CSS) |
 |-------|-----|------------------|
@@ -357,4 +367,16 @@ Elevation scale from 01 (lowest) to 05 (highest). Each level composites two laye
 | `shadow/02` | **Default** — most items | `0 2px 4px rgba(0,0,0,.14), 0 0 2px rgba(0,0,0,.12)` |
 | `shadow/03` | Bigger components | `0 4px 8px rgba(0,0,0,.14), 0 0 2px rgba(0,0,0,.12)` |
 | `shadow/04` | Bigger components | `0 8px 16px rgba(0,0,0,.14), 0 0 2px rgba(0,0,0,.12)` |
-| `shadow/05` | Highest elevation | `0 10px 25px rgba(0,0,0,.14), 0 0 8px rgba(0,0,0,.2)` |
+| `shadow/05` | Highest elevation | `0 10px 25px rgba(0,0,0,.14), 0 0 8px rgba(0,0,0,.12)` |
+
+**Dark mode**
+
+| Token | Use | box-shadow (CSS) |
+|-------|-----|------------------|
+| `shadow/01` | Small items / components needing emphasis | `0 1px 2px rgba(0,0,0,.45), 0 0 2px rgba(0,0,0,.40)` |
+| `shadow/02` | **Default** — most items | `0 2px 4px rgba(0,0,0,.45), 0 0 2px rgba(0,0,0,.40)` |
+| `shadow/03` | Bigger components | `0 4px 8px rgba(0,0,0,.50), 0 0 2px rgba(0,0,0,.40)` |
+| `shadow/04` | Bigger components | `0 8px 16px rgba(0,0,0,.50), 0 0 2px rgba(0,0,0,.40)` |
+| `shadow/05` | Highest elevation | `0 10px 25px rgba(0,0,0,.55), 0 0 8px rgba(0,0,0,.40)` |
+
+> Optional: on prominent Dark-mode surfaces (modals, cards) pair elevation with a top-edge highlight — `inset 0 1px 0 rgba(255,255,255,.06)` (`shadow/highlight`) — to reinforce the light-source cue. Not used in Light mode, where `shadow/highlight` is fully transparent.
