@@ -6,7 +6,7 @@ Source of truth for building Takeat product interfaces. Whenever there's a choic
 - Prioritize palette colors. For minor adjustments, modify **opacity only**. New variations follow each family's rules.
 - **Poppins** is the sole typeface. Never use sizes or families outside the tokens.
 - Spacing, grid, and radius follow a fixed scale (8pt base). Never design outside the grid.
-- Dark mode is supported via the `Colors` variable collection (Light/Dark modes). Semantic tokens (`surface/*`, `text/*`, `stroke/*`, `brand/*`, `shadow/*`) remap automatically per mode. Color family primitives (`red/*`, `teal/*`, `neutral/*`, etc.) currently share the same values across both modes — the semantic layer handles the mode-switching.
+- Dark mode is supported via the `Colors` variable collection (Light/Dark modes). Semantic tokens (`surface/*`, `text/*`, `stroke/*`, `brand/*`, `shadow/*`) remap automatically per mode. Color family primitives (red/*, teal/*, blue/*, etc.) use lifted, higher-chroma hex values in Dark mode so hues stay legible on dark surfaces. The opacity-step pattern (tint = 10→16%, 40/60/80, default = 100%) still holds per mode; only the base hex and the tint percentage shift.
 
 # Brand Assets
 
@@ -44,6 +44,7 @@ Use the Takeat icon when the brand needs to be represented without the full word
 - Use the icon only when the available space or context makes the full logo inappropriate.
 - Always ensure sufficient contrast between the asset and its background.
 
+
 ## AI Instructions
 
 When generating or modifying a Takeat interface:
@@ -67,7 +68,7 @@ All colors are managed as **Figma variables** in the `Colors` collection, with *
 - **Secondary**: used in Area do Gestor and Multilojas — the standard palette applies, **except the primary red, which is replaced by Gestor (Rosa Vinho / Rose)**.
 - **Tertiary**: only for details or cases where no standard color fits. Apply sparingly.
 - Avoid pure black (`#000000`) in UI elements.
-
+  
 ### Semantic Tokens
 
 Semantic tokens map to different raw values depending on the active mode (Light / Dark). Always use semantic tokens for surfaces, text, strokes, and brand elements — they switch automatically when the mode changes.
@@ -136,100 +137,86 @@ Each color family exposes a consistent set of variable tokens: `default`, `tint`
 #### Vermelho Takeat — Red (Primary)
 Primary brand color. Active navigation, primary CTAs, brand surfaces, and operational status indicators.
 
-| Variable | HEX | Use |
+| Variable | Light | Dark | Use |
 |----------|-----|-----|
-| `red/default` | `#C8131B` | **Active nav items (Operacao, Delivery); primary CTAs; brand cover; cancel button fills; table/mesa borders in active state** |
-| `red/tint` | `#C8131B` | Light tint for backgrounds, badges, and tag surfaces |
-| `red/40` | `#C8131B` | 40% weight — outlined error states, mid-weight badges |
-| `red/60` | `#C8131B` | 60% weight — hover/focus accent on primary elements |
-| `red/80` | `#C8131B` | 80% weight — stronger accent, bordered error components |
-| `red/dark` | `#94090F` | Pressed/active state of primary buttons; high-contrast error text |
+| `red/default` | `#C8131B` | `#E23B41` |  **Active nav items (Operacao, Delivery); primary CTAs; brand cover; cancel button fills; table/mesa borders in active state** |
+| `red/tint` | `#C8131B` . 10% | `#E23B41` . 16% | Light tint for backgrounds, badges, and tag surfaces |
+| `red/40` | `#C8131B` . 40% | `#E23B41` . 40% | Outlined error states, mid-weight badges |
+| `red/60` | `#C8131B` . 60% |`#E23B41` . 60% | Hover/focus accent on primary elements |
+| `red/80` | `#C8131B` . 80% | `#E23B41` . 80% | Stronger accent, bordered error components |
+| `red/dark` | `#7A0D12` | `#AE2C33` | Pressed/active state of primary buttons; high-contrast error text |
 
 #### Verde / Teal (Standard)
 Device/connection status, available table states, export actions, positive financial values, chart series, positive action buttons.
 
-| Variable | HEX | Use |
+| Variable | Light | Dark | Use |
 |----------|-----|-----|
-| `teal/default` | `#2EC9B7` | **"Conectado" (connected) status; available mesa fill; "Baixar planilha" (export) text/icon; positive action buttons ("Fechar", "Pronto"); download button outline** |
-| `teal/tint` | `#2EC9B7` | Light tint for positive metric surfaces, badge backgrounds |
-| `teal/40` | `#2EC9B7` | 40% weight — light success badge, strokes |
-| `teal/60` | `#2EC9B7` | 60% weight — chart/graph data series, mid-weight fill |
-| `teal/80` | `#2EC9B7` | 80% weight — chart series accent, progress indicators |
-| `teal/dark` | `#1D9688` | Positive revenue value text; chart series; positive metric card border |
+| `teal/default` | `#1D9688` | `#34C4B2` |  **"Conectado" (connected) status; available mesa fill; "Baixar planilha" (export) text/icon; positive action buttons ("Fechar", "Pronto"); download button outline** |
+| `teal/tint` | `#1D9688` . 10% | `#34C4B2` . 16% | Light tint for positive metric surfaces, badge backgrounds |
+| `teal/40` | `#1D9688` . 40% | `#34C4B2` . 40% | Light success badge, strokes |
+| `teal/60` | `#1D9688` . 60% | `#34C4B2` . 60% | Chart/graph data series, mid-weight fill |
+| `teal/80` | `#1D9688` . 80% | `#34C4B2` . 80% | Chart series accent, progress indicators |
+| `teal/dark` | `#0E4F46` | `#228074` | Positive revenue value text; chart series; positive metric card border |
 
 #### Azul / Blue (Standard)
 Informational states. "Em andamento" badges, info banners, hyperlinks, notifications, focused input/link states.
 
-| Variable | HEX | Use |
+| Variable | Light | Dark | Use |
 |----------|-----|-----|
-| `blue/default` | `#01AFFF` | **Info/secondary buttons; info icon fills** |
-| `blue/tint` | `#01AFFF` | Light tint for info surfaces, badge backgrounds |
-| `blue/40` | `#01AFFF` | 40% weight — banner border/outline |
-| `blue/60` | `#01AFFF` | 60% weight — mid-weight info accent |
-| `blue/80` | `#01AFFF` | 80% weight — secondary info interactive accent |
-| `blue/dark` | `#018CCC` | Hyperlink text (rest, hover, focus); external link icon; hyperlink underline |
+| `blue/default` | `#018CCC` | `#38B6FA` | **Info/secondary buttons; info icon fills** |
+| `blue/tint` | `#018CCC` . 10% | `#38B6FA` . 16% | Light tint for info surfaces, badge backgrounds |
+| `blue/40` | `#018CCC` . 40%  | `#38B6FA` . 40%  | Banner border/outline |
+| `blue/60` | `#018CCC` . 60%  | `#38B6FA` . 60%  | Mid-weight info accent |
+| `blue/80` | `#018CCC` . 80%  | `#38B6FA` . 80%  | Secondary info interactive accent |
+| `blue/dark` | `#015A85` | `#1F7CAC` | Hyperlink text (rest, hover, focus); external link icon; hyperlink underline |
 
 #### Amarelo / Yellow (Standard)
 Secondary/detail actions and pending states in the Dashboard (e.g. "Botao Detalhes").
 
-| Variable | HEX | Use |
+| Variable | Light | Dark | Use |
 |----------|-----|-----|
-| `yellow/default` | `#FFB32F` | **"Botao Detalhes" (secondary detail actions); pending order status; warning icons; status ellipses on operational screens** |
-| `yellow/tint` | `#FFB32F` | Light tint for warning/pending surfaces |
-| `yellow/40` | `#FFB32F` | 40% weight — light pending indicator |
-| `yellow/60` | `#FFB32F` | 60% weight — attention chip, mid-weight pending state |
-| `yellow/80` | `#FFB32F` | 80% weight — mid-light warning tag |
-| `yellow/dark` | `#CC8C1D` | Pressed warning state; darkest warning accent |
+| `yellow/default` | `#F0A118` | `#FFC24D` | **"Botao Detalhes" (secondary detail actions); pending order status; warning icons; status ellipses on operational screens** |
+| `yellow/tint` | `#F0A118` · 10% | `#FFC24D` · 16% | Light tint for warning/pending surfaces |
+| `yellow/40` | `#F0A118` · 40% | `#FFC24D` · 40% | Light pending indicator |
+| `yellow/60` | `#F0A118` · 60% | `#FFC24D` · 60% | Attention chip, mid-weight pending state |
+| `yellow/80` | `#F0A118` · 80% | `#FFC24D` · 80% | Mid-light warning tag |
+| `yellow/dark` | `#8B5E0E` | `#BE882D` |Pressed warning state; darkest warning accent |
 
 #### Area do Gestor — Rosa Vinho / Gestor (Secondary)
 Primary brand color for the Gestor product. Replaces red in Area do Gestor and Multilojas. Cover, sidebar brand accent, operational buttons, nav text, button outlines.
 
-| Variable | HEX | Use |
+| Variable | Light | Dark | Use |
 |----------|-----|-----|
-| `gestor/default` | `#A82743` | **Gestor brand cover; operational buttons; nav text ("Area do Gestor", "Sair"); outlined button borders; active brand elements** |
-| `gestor/tint` | `#A82743` | Light tint for brand surfaces, badge backgrounds |
-| `gestor/40` | `#A82743` | 40% weight — disabled/secondary brand tags |
-| `gestor/60` | `#A82743` | 60% weight — mid-light brand indicator |
-| `gestor/80` | `#A82743` | 80% weight — bordered brand elements, hover accents |
-| `gestor/dark` | `#75162B` | Pressed/active state of brand buttons; darkest brand accent |
+| `gestor/default` | `#A82743` | `#CE4E6B` | **Gestor brand cover; operational buttons; nav text ("Area do Gestor", "Sair"); outlined button borders; active brand elements** |
+| `gestor/tint` | `#A82743`  · 10% | `#CE4E6B` · 16% | Light tint for brand surfaces, badge backgrounds |
+| `gestor/40` | `#A82743` · 40% | `#CE4E6B`  · 40% | Disabled/secondary brand tags |
+| `gestor/60` | `#A82743`  · 60% | `#CE4E6B`  · 60% | Mid-light brand indicator |
+| `gestor/80` | `#A82743` · 80% | `#CE4E6B`  · 80% | Bordered brand elements, hover accents |
+| `gestor/dark` | `#5C1525` | `#8E3348` | Pressed/active state of brand buttons; darkest brand accent |
 
 #### Laranja / Orange (Tertiary)
 Decorative accents and edge cases. **Never** for status or primary actions.
 
-| Variable | HEX | Use |
+| Variable | Light | Dark | Use |
 |----------|-----|-----|
-| `orange/default` | `#FF7D24` | **Decorative elements, special promotional indicators** |
-| `orange/tint` | `#FF7D24` | Light tint for decorative backgrounds |
-| `orange/40` | `#FF7D24` | 40% weight — light decorative tags |
-| `orange/60` | `#FF7D24` | 60% weight — illustration accents |
-| `orange/80` | `#FF7D24` | 80% weight — UI detail highlights |
-| `orange/dark` | `#CC5F14` | Pressed / high-contrast detail; darkest accent |
+| `orange/default` | `#E66812` | `#FF934D` | **Decorative elements, special promotional indicators** |
+| `orange/tint` | `#E66812`  · 10% | `#FF934D`  · 16% | Light tint for decorative backgrounds |
+| `orange/40` | `#E66812`  · 40% | `#FF934D`  · 40% | Light decorative tags |
+| `orange/60` | `#E66812`  · 60% | `#FF934D`  · 60% | Illustration accents |
+| `orange/80` | `#E66812`  · 80% | `#FF934D`  · 80% | UI detail highlights |
+| `orange/dark` | `#843B0A` | `#B75E27` | Pressed / high-contrast detail; darkest accent |
 
 #### Verde 2 / Green (Tertiary)
 Financial & KPI contexts — upward-trending metrics, net totals, positive growth. Distinct from Teal, which is operational status; Green is business performance.
 
-| Variable | HEX | Use |
+| Variable | Light | Dark | Use |
 |----------|-----|-----|
-| `green/default` | `#27A84C` | **Confirmation/approval buttons in Dashboard flows; positive action fill** |
-| `green/tint` | `#27A84C` | Light tint for positive metric surfaces |
-| `green/40` | `#27A84C` | 40% weight — light positive metric tag |
-| `green/60` | `#27A84C` | 60% weight — mid-light positive indicator |
-| `green/80` | `#27A84C` | 80% weight — mid-weight positive accent |
-| `green/dark` | `#167532` | "TrendingUp" icon (positive KPI arrow); positive revenue text; "Total Liquido" card border; pressed positive state |
-
-### Neutral Colors (Primitives)
-The structural backbone — raw neutral values referenced by semantic tokens and used directly when no semantic token applies.
-
-| Variable | HEX | Use |
-|----------|-----|-----|
-| `neutral/white` | `#FFFFFF` | Card surfaces, modal backgrounds, input fields, text on dark/colored backgrounds — the most used color |
-| `neutral/50` | `#F6F6F6` | Primary page/screen background — the base layout canvas |
-| `neutral/100` | `#EDEDED` | Section dividers, full-width divider lines |
-| `neutral/200` | `#C6C6C6` | Input borders, separators, skeleton placeholders, disabled element borders |
-| `neutral/500` | `#7A7A7A` | Metadata & caption text (phone numbers, restaurant names, secondary labels); default input border |
-| `neutral/700` | `#545454` | **Primary nav labels & body text** — the most used text color in Dashboard |
-| `neutral/900` | `#222222` | Primary data values (monetary amounts, percentages, headings); icon vectors/paths |
-| `neutral/black` | `#000000` | Icon vectors and external brand/payment logos only — never UI text or large backgrounds |
+| `green/default` | `#167532` | `#27A84C` | **Confirmation/approval buttons in Dashboard flows; positive action fill** |
+| `green/tint` | `#167532` . 10% | `#27A84C` . 16%  | Light tint for positive metric surfaces |
+| `green/40` | `#167532` . 40%  | `#27A84C` . 40%  | 40% weight — light positive metric tag |
+| `green/60` | `#167532` . 60%  | `#27A84C` . 60%  | 60% weight — mid-light positive indicator |
+| `green/80` | `#167532` . 80%  | `#27A84C` . 80%  | 80% weight — mid-weight positive accent |
+| `green/dark` | `#0A421A` | `#27753E` | "TrendingUp" icon (positive KPI arrow); positive revenue text; "Total Liquido" card border; pressed positive state |
 
 ---
 
