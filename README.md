@@ -89,7 +89,7 @@ Do not assume that the README contains the complete Design System.
 
 ## 3. Do not use external Design Systems
 
-For Takeat UI design, **do not use another Design System as a visual reference or substitute**.
+For Takeat UI design, **do not use another Design System as a substitute**.
 
 This includes, but is not limited to:
 
@@ -112,27 +112,7 @@ If a third-party Design System conflicts with Takeat's Design System, **the Take
 
 ---
 
-## 4. Do not use external visual references
-
-Do not use external sources as authority for Takeat UI design, including:
-
-* Design galleries
-* UI templates
-* Dribbble
-* Behance
-* Mobbin
-* Pinterest
-* Other product interfaces
-* Third-party component libraries
-* External design examples
-* Generic UI kits
-* Other companies' Design Systems
-
-External references must not be used to introduce visual patterns that are not defined by the Takeat Design System.
-
----
-
-## 5. Use existing Takeat tokens
+## 4. Use existing Takeat tokens
 
 When an official token exists, use it.
 
@@ -156,7 +136,7 @@ Do not replace an official token with a visually similar custom value.
 
 ---
 
-## 6. Use existing Takeat components
+## 5. Use existing Takeat components
 
 Before creating a new component or interaction pattern, check `components.md`.
 
@@ -179,7 +159,7 @@ Do not create a new component when an existing Takeat component can satisfy the 
 
 ---
 
-## 7. Follow platform-specific rules
+## 6. Follow platform-specific rules
 
 Takeat interfaces may have different specifications depending on the target platform.
 
@@ -195,7 +175,7 @@ Follow the platform-specific rules defined in `foundations.md` and `components.m
 
 ---
 
-## 8. Follow Light and Dark mode rules
+## 7. Follow Light and Dark mode rules
 
 Takeat supports Light and Dark modes.
 
@@ -207,7 +187,7 @@ Do not replace semantic tokens with arbitrary hex values when an appropriate sem
 
 ---
 
-## 9. Follow existing usage rules
+## 8. Follow existing usage rules
 
 The Design System contains not only visual specifications but also rules about **when and how components should be used**.
 
