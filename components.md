@@ -13,10 +13,10 @@ Never mix sizes across platforms.
 
 | Size | Height | Pad V | Pad H | Radius | Typography | Icon | Icon-only | Platform |
 |------|--------|-------|-------|--------|-----------|------|-----------|----------|
-| Small | 24px | 4px | 8px | 4px | 12/600 (Body Small/SemiBold) | 16px | 24x24 | Desktop |
-| Medium | 32px | 10px | 16px | 8px | 14/600 (Label Large/SemiBold) | 20px | 32x32 | Desktop |
+| Small | 24px | 4px | 8px | 8px | 12/600 (Body Small/SemiBold) | 16px | 24x24 | Desktop |
+| Medium | 32px | 10px | 16px | 12px | 14/600 (Label Large/SemiBold) | 20px | 32x32 | Desktop |
 | Large | 40px | 8px | 16px (24px label-only) | 12px | 14/600 (Label Large/SemiBold) | 24px | 40x40 | Desktop |
-| Mobile/Tablet | 48px | 12px | 16px (24px label-only) | 12px | 16/600 (Title Small/SemiBold) | 24px | 48x48 | Mobile |
+| Mobile/Tablet | 48px | 12px | 16px (24px label-only) | 16px | 16/600 (Title Small/SemiBold) | 24px | 48x48 | Mobile |
 | Totem | 68px | 16px | 16px (24px label-only) | 16px | 24/600 (Heading Small/SemiBold) | 36px | 68x68 | Totem |
 
 - Small: dense secondary actions (row actions, inline filters).
@@ -85,7 +85,7 @@ Single-line text input across all platforms. Supports labels, helper text, icons
 | Height | 40px | 48px | 68px |
 | Padding V / H | 10px / 16px | 12px / 16px | 16px / 12px |
 | Padding H (with icon) | 12px | 12px | 12px |
-| Radius | `radius/8` | `radius/16` | `radius/16` |
+| Radius | `radius/12` | `radius/16` | `radius/16` |
 | Icon size | 20px | 20px | 36px |
 | Placeholder | 14px / 400 | 16px / 400 | 24px / 400 |
 | Placeholder token | `Body Medium` | `Body Large` | `Heading Small` |
