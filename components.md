@@ -554,8 +554,8 @@ Vertical stack, top to bottom:
 | Property | Value |
 |---|---|
 | Fill | `surface/raised` |
-| Stroke | `stroke/medium`, 1px (external border) |
-| Internal dividers | `stroke/medium`, 0.5px — last row has no bottom border |
+| Stroke | `stroke/default`, 1px (external border) |
+| Internal dividers | `stroke/default`, 1px — last row has no bottom border |
 | Corner Radius | `radius/16` |
 | Layout | Vertical |
 | Padding | `spacing/16` |
@@ -624,7 +624,7 @@ Vertical stack, top to bottom:
 | Layout | Horizontal (columns stacked vertically) |
 | Row min height | `44` |
 | Cell padding H | `spacing/12` |
-| Row divider | Bottom, 0.5px, `stroke/medium` |
+| Row divider | Bottom, 1px, `stroke/default` |
 | Text | `text/secondary`, `Body Medium/Medium | 500` (14/500) |
 | Overflow | `text-overflow: ellipsis` — avoid horizontal scroll (see Column Width) |
 
