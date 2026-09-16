@@ -522,3 +522,249 @@ Same tokens as Input. Always includes a label.
 |---|---|---|---|---|
 | Calendario default com opcao de filtrar por intervalo | Calendar with optional date range filter toggle | 403 x 476 | `surface/raised` | `8` |
 | Calendario com filtro por intervalo | Calendar with active date range filter — expanded view | 403 x 577 | `surface/raised` | `8` |
+
+---
+
+## 5. Table
+
+### Overview
+
+Modular data table for Desktop. Every piece is independent and can be combined freely — there are no fixed variants. The final composition depends on the context. Column headers and table body are always present. Pagination is required only when the table has more than 10 rows.
+
+**Required:** Column Headers | Table Body | Export Button | Pagination (only when > 10 rows)
+**Optional:** Toolbar elements (title, subtitle, search, filter button, additional buttons) | Active Filters | Header Groups | Expandable Row | Total Row | Checkbox Column | Actions Column | Selection Bar | Cell subtitle | Cell chip
+
+### Anatomy
+
+Vertical stack, top to bottom:
+
+| Order | Section | Required | Height |
+|---|---|---|---|
+| 1 | Toolbar | No | 72px |
+| 2 | Active Filters | No | 44px (+ 2px divider) |
+| 3 | Header Groups | No | 32px |
+| 4 | Column Headers | Yes | 48px |
+| 4.1 | Total Row | No | 48px, first body row |
+| 5 | Table Body | Yes | min 44px per row |
+| 6 | Pagination | When > 10 rows | 64px |
+| — | Selection Bar | No | 48px, floating over Pagination |
+
+### Container
+
+| Property | Value |
+|---|---|
+| Fill | `surface/raised` |
+| Stroke | `stroke/default`, 1px (external border) |
+| Internal dividers | `stroke/default`, 0.5px — last row has no bottom border |
+| Corner Radius | `radius/16` |
+| Layout | Vertical |
+| Padding | `spacing/16` |
+| Width | Fill — table width follows the screen |
+
+### Toolbar
+
+**Use:** Top bar with any combination of title, search, and actions. All elements are optional.
+
+| Property | Value |
+|---|---|
+| Height | `72` |
+| Layout | Horizontal, space-between, center aligned |
+| Padding | `spacing/16` all sides |
+| Action group gap | `spacing/8` |
+
+| Element | Detail | Color | Typography Token |
+|---|---|---|---|
+| Title | Left side | `text/primary` | `Title Small/SemiBold | 600` |
+| Subtitle | Below title | `text/secondary` | `Body Medium/Regular | 400` |
+| Search Input | Input (search), icon `Search`, placeholder "Buscar na tabela", 210 x 40 | See Input (§2) | `Body Medium/Regular | 400` |
+| Filter Button | Outlined, Large (40px), icon `FilterList`, label "Filtros". Can show count ("Filtros • 2"). Can be replaced by Calendar Input (§4), Dropdown (§3), etc. | Brand (`red/*` / `gestor/*`) | See Buttons (§1) |
+| Export Button | **Required.** Outlined, Large (40px), icon `ExportFile`, label "Exportar". PDF always; CSV only when requested | `teal/default` | See Buttons (§1) |
+| Additional Buttons | Any quantity. Same style and size as Filter Button (Outlined, Large) | Brand (`red/*` / `gestor/*`) | See Buttons (§1) |
+
+### Active Filters
+
+**Use:** Shows applied filters below the toolbar. Only rendered when at least one filter is active.
+
+| Element | Detail | Color | Typography Token |
+|---|---|---|---|
+| Divider | 2px, full width | `stroke/subtle` | — |
+| Row | Vertical, height `44`, padding `8` top/bottom | — | — |
+| Label | "Filtros aplicados:" | `text/secondary` | `Body Small/Regular | 400` |
+| Chips | Horizontal, gap `spacing/8`, no quantity limit | — | — |
+| Filter Chip | Removable, height `24`, label "nome do filtro: valor", icon `Close` | — | `Label Medium` |
+
+### Header Groups
+
+**Use:** Groups two or more columns under a shared label. No quantity limit.
+
+| Property | Value |
+|---|---|
+| Height | `32` |
+| Fill | `surface/nested` (#F6F6F6) |
+| Layout | Horizontal |
+| Span | 1 or more columns |
+| Text | Uppercase, `text/secondary`, `Label Medium/Medium | 500` (12/500) |
+
+### Column Headers
+
+| Property | Value |
+|---|---|
+| Height | `48` |
+| Fill | `surface/fill` (#EDEDED) |
+| Layout | Horizontal, center aligned |
+| Label to Sort gap | `spacing/4` |
+| Label | `text/secondary`, `Label Large/SemiBold | 600` |
+| Sort icon | `Exchange`, 16px, optional per column |
+| Sub-columns | Optional. Each sub-column has its own header and optional sort |
+
+### Table Body
+
+| Property | Value |
+|---|---|
+| Layout | Horizontal (columns stacked vertically) |
+| Row min height | `44` |
+| Cell padding H | `spacing/12` |
+| Row divider | Bottom, 0.5px, `stroke/default` |
+| Text | `text/secondary`, `Body Medium/Medium | 500` (14/500) |
+| Overflow | `text-overflow: ellipsis` — avoid horizontal scroll (see Column Width) |
+
+#### Row Heights
+
+| Content | Height |
+|---|---|
+| Plain text | 44px (min) |
+| Text + subtitle | 62px |
+| Text + chip | ~49px |
+| Custom | Variable (min 44px) |
+
+#### Cell Content
+
+Free, context-dependent. No type restriction.
+
+| Type | Detail | Increases row height |
+|---|---|---|
+| Text | Plain text | No |
+| Text + Subtitle | Main text + subtitle below (`text/tertiary`, `Body Small/Regular | 400`) | Yes |
+| Text + Chip | Text + chip/badge beside or below | Yes |
+| Chip | Standalone status chip | No |
+| Input | Editable Input (§2) | Depends |
+| Button | Action button, Small size (§1) | No |
+| Icon | Standalone icon | No |
+| Custom | Any other component | Depends |
+
+#### Column Width
+
+- Proportional to cell content; total width follows the screen.
+- Numeric columns tend to be narrower.
+- Long-text columns get width proportional to content.
+- Actions column has a fixed minimum width that fits its buttons.
+- If the table doesn't fit, truncate text first, then narrow numeric columns, then drop secondary columns.
+- **Horizontal scroll only as a last resort**, when the table has too many columns. In that case the identity column is pinned left and the actions column pinned right.
+
+### Expandable Row
+
+**Use:** Reveals extra content below a row.
+
+| Property | Value |
+|---|---|
+| Trigger | `ChevronRight`, 16px, first column |
+| Behavior | Rotates 90° on expand |
+| Icon color | `text/secondary` |
+| Expanded content | Free — cards, nested tables, details, forms, any layout |
+
+### Total Row (Summary)
+
+**Use:** Optional totals/summary row. Always the first row of the body.
+
+| Property | Value |
+|---|---|
+| Height | `48` |
+| Fill | `red/tint` (Dashboard) / `gestor/tint` (Area do Gestor / Multilojas) |
+| Text | `text/primary`, `Body Medium/SemiBold | 600` (14/600) |
+
+### Checkbox Column
+
+**Use:** Multi-row selection. Enables the Selection Bar.
+
+| Property | Value |
+|---|---|
+| Position | Own first column, or inside the identity cell before the chevron. Pick one per table |
+| Checkbox size | `24 x 24` |
+| States | Unchecked, Checked, Indeterminate |
+| Header checkbox | Indeterminate when some rows are selected |
+
+### Actions Column
+
+| Property | Value |
+|---|---|
+| Position | Last column |
+| Header | "Ações" |
+| Content | 1 or more buttons per row |
+
+| Action type | Detail |
+|---|---|
+| Menu Button | `MenuCircles` 24px — opens Simple Dropdown (§3) |
+| Icon Button | Icon-only, Small size (§1) — edit, delete, view, etc. Requires tooltip |
+| Text Button | Text Button style (§1) |
+
+### Selection Bar
+
+**Use:** Floating bar over Pagination when rows are selected via checkbox. Fully customizable.
+
+| Property | Value |
+|---|---|
+| Height | `48` |
+| Layout | Horizontal, center aligned |
+| Gap | `spacing/16` |
+| Counter | "{n} selecionados", `text/secondary`, `Body Medium/Regular | 400` |
+| Buttons | Max 4, Medium size (32px), gap `spacing/8` |
+| Elevation | `shadow/02` |
+
+### Pagination
+
+**Use:** Required when the table has more than 10 rows. Tables with 10 rows or fewer have no pagination.
+
+| Property | Value |
+|---|---|
+| Height | `64` |
+| Layout | Horizontal, space-between |
+| Padding | `spacing/16` all sides |
+| Controls gap | `spacing/8` |
+
+| Element | Detail | Color / Style | Typography Token |
+|---|---|---|---|
+| Record Count | "{start}–{end} de {total} registros" | `text/secondary` | `Body Medium/Regular | 400` |
+| Rows per page | Select, label "Linhas por página", height `32`, options 10 / 25 / 50 / 100, default 10 | See Dropdown (§3) | `Body Medium/Regular | 400` |
+| Previous | `ChevronLeft`, 18px | `text/secondary` | — |
+| Page Buttons | 32 x 32 | Active: Filled (brand) · Inactive: Ghost (Text Button) | `Label Large/SemiBold | 600` |
+| Next | `ChevronRight`, 18px | `text/secondary` | — |
+
+> **Gestor / Multilojas:** swap `red/*` for `gestor/*` on brand buttons, the active page, and the Total Row fill. Export Button stays `teal/default`.
+
+### Off-Scale Warnings
+
+| Issue | Fix |
+|---|---|
+| Foundations lists `Label Medium 700` as table column headers | Update Foundations to `Label Large 600` |
+
+### Guidelines
+
+- Avoid horizontal scroll — truncate with ellipsis. Only allow it when the table has too many columns.
+- Minimum cell height is **44px**.
+- Pagination only when there are **more than 10 rows**; rows per page starts at **10**.
+- Export Button is **required**: always **teal**, **PDF** always, **CSV** only when requested.
+- Header groups and sort are optional, with no quantity limit.
+- Selection Bar has at most **4** Medium buttons.
+- Filters are not limited to the Filter Button — Calendar Input, Dropdown, etc. are valid.
+- Toolbar buttons (filters, export, additional) are **Large (40px)**; Selection Bar buttons are **Medium (32px)**; row actions are Small.
+
+### Do's & Don'ts
+
+| Do | Don't |
+|---|---|
+| Truncate long text with ellipsis | Horizontal scroll when truncating would solve it |
+| Teal Export Button with PDF | Export in brand color, or CSV without PDF |
+| Pagination on tables with more than 10 rows | Pagination on tables with 10 rows or fewer |
+| Up to 4 buttons in the Selection Bar | 5+ actions in the Selection Bar |
+| Tooltip on icon-only row actions | Icon-only actions with no context |
+| Gestor tokens in Gestor/Multilojas | Mixing Red and Gestor on the same table |
