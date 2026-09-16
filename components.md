@@ -551,15 +551,40 @@ Vertical stack, top to bottom:
 
 ### Container
 
+The table always sits inside a white card. Two nested layers:
+
+```
+┌ Card ─────────────────────────────────┐  surface/raised · stroke/default · padding 16
+│ ┌ Table Frame ──────────────────────┐ │  stroke/medium
+│ │ Toolbar                           │ │
+│ │ Header Groups · Column Headers    │ │
+│ │ Body                              │ │
+│ │ Pagination                        │ │
+│ └───────────────────────────────────┘ │
+└───────────────────────────────────────┘
+```
+
+#### Card (outer)
+
 | Property | Value |
 |---|---|
 | Fill | `surface/raised` |
-| Stroke | `stroke/default`, 1px (external border) |
-| Internal dividers | `stroke/default`, 1px — last row has no bottom border |
+| Stroke | `stroke/default`, 1px |
 | Corner Radius | `radius/16` |
+| Padding | `spacing/16` all sides |
+| Width | Fill — follows the screen |
+
+#### Table Frame (inner)
+
+| Property | Value |
+|---|---|
+| Fill | `surface/raised` |
+| Stroke | `stroke/medium`, 1px (external border) |
+| Internal dividers | `stroke/medium`, 0.5px — last row has no bottom border |
+| Corner Radius | `radius/16`, content clipped to the radius |
 | Layout | Vertical |
-| Padding | `spacing/16` |
-| Width | Fill — table width follows the screen |
+| Padding | `0` — each section (Toolbar, Pagination, cells) carries its own padding |
+| Width | Fill — the Card's content width |
 
 ### Toolbar
 
@@ -624,7 +649,7 @@ Vertical stack, top to bottom:
 | Layout | Horizontal (columns stacked vertically) |
 | Row min height | `44` |
 | Cell padding H | `spacing/12` |
-| Row divider | Bottom, 1px, `stroke/default` |
+| Row divider | Bottom, 0.5px, `stroke/medium` |
 | Text | `text/secondary`, `Body Medium/Medium | 500` (14/500) |
 | Overflow | `text-overflow: ellipsis` — avoid horizontal scroll (see Column Width) |
 
