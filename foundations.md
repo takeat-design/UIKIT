@@ -103,8 +103,8 @@ Dark mode strokes are white at varying opacity, not a flat color — same princi
 
 | Variable | Light | Dark | Use |
 |---|---|---|---|
-| `stroke/subtle` | `#EDEDED` | `#FFFFFF` · 12% | Section dividers, full-width divider lines |
-| `stroke/default` | `#C6C6C6` | `#FFFFFF` · 16% | Input borders, separators, skeleton placeholders, disabled element borders |
+| `stroke/default` | `#EDEDED` | `#FFFFFF` · 12% | Default stroke: card borders, section dividers, full-width divider lines, floating surface borders (menus, drawer, selection bar) |
+| `stroke/medium` | `#C6C6C6` | `#FFFFFF` · 16% | Table borders and table dividers, disabled and read-only input borders, skeleton placeholders, disabled element borders |
 | `stroke/strong` | `#7A7A7A` | `#FFFFFF` · 24% | Default input border at rest; stronger separators |
 
 #### Brand
@@ -248,9 +248,9 @@ Apply this distinction at every size level before choosing a token.
 | **Details** | 8px | 12px | 0 | Desktop only. 500: micro-labels in tight spaces; 600: nav module labels below icons; 700: high-emphasis micro-tags ("ON"/"OFF"), check contrast |
 | **Label Small** | 11px | 16px | 0.5px | Desktop & Mobile (restricted), never Totem. 500: comparison chips ("vs. previous period"); 600: bottom-nav sub-labels on Mobile, price footnotes; 800: high-emphasis short labels in banners (use sparingly) |
 | **Body Small** | 12px | 16px | 0.4px | Desktop & Mobile. Extended secondary text. 400: secondary/status text; 500: insight paragraphs, legends (most used body on desktop); 600: secondary text with emphasis |
-| **Label Medium** | 12px | 16px | 0.5px | Desktop & Mobile. Short labels/identifiers. 500: bottom-nav tabs on Mobile; 600: timestamps, IDs, operator names, metadata; 700: table column headers |
-| **Body Medium** | 14px | 20px | 0.25px | Desktop & Mobile / Totem (caution). **Primary body size.** 400: nav items, lists, table rows; 500: **most used style in the system** — button labels & interactive text; 600: section/tab labels, entity names |
-| **Label Large** | 14px | 20px | 0.1px | Desktop & Mobile / Totem (caution). Short interactive labels. 400: placeholders; 500: KPI labels, form fields; 600: percentage/metric labels, action links, Mobile primary CTA; 700: active nav states, download/export labels |
+| **Label Medium** | 12px | 16px | 0.5px | Desktop & Mobile. Short labels/identifiers. 500: bottom-nav tabs on Mobile, table header groups (uppercase); 600: timestamps, IDs, operator names, metadata; 700: high-emphasis short identifiers |
+| **Body Medium** | 14px | 20px | 0.25px | Desktop & Mobile / Totem (caution). **Primary body size.** 400: nav items, lists; 500: **most used style in the system** — button labels, interactive text, table cell text; 600: section/tab labels, entity names |
+| **Label Large** | 14px | 20px | 0.1px | Desktop & Mobile / Totem (caution). Short interactive labels. 400: placeholders; 500: KPI labels, form fields; 600: table column headers, percentage/metric labels, action links, Mobile primary CTA; 700: active nav states, download/export labels |
 | **Body Large** | 16px | 24px | 0.5px | All platforms (smallest body for Totem). 400: item/product descriptions; 500: modal/drawer paragraphs; 600: prices/values in blocks, grouping labels |
 | **Title Small** | 16px | 24px | 0.15px | All / Totem (caution). 400: supporting text; 500: modal subsection content; 600: monetary values, input titles; 700: section/modal headers, primary CTA |
 | **Title Medium** | 18px | 24px | 0 | All. 400: supporting text; 500: large form labels, Totem search placeholder; 600: drawer/modal titles (standard for overlays); 700: report section headings, product names on Totem |
