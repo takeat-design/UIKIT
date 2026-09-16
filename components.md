@@ -114,8 +114,8 @@ Single-line text input across all platforms. Supports labels, helper text, icons
 | Focused | `#016999` | Placeholder `text/disabled` |
 | Active | `stroke/strong` | Text `text/secondary` |
 | Error | `red/default` | Text `text/secondary` |
-| Disabled | `stroke/default` | Placeholder `text/disabled` |
-| Read Only | `stroke/default` | Text `text/primary` |
+| Disabled | `stroke/medium` | Placeholder `text/disabled` |
+| Read Only | `stroke/medium` | Text `text/primary` |
 
 ### States — Filled
 
@@ -381,14 +381,14 @@ Same tokens as Input. Always includes a label.
 |---|---|
 | Container Fill | `surface/raised` |
 | Container Radius | `8` (mobile: `12`) |
-| Mobile Container Stroke | `stroke/subtle` |
+| Mobile Container Stroke | `stroke/default` |
 | Font Family | Poppins |
 | Primary Color (Dashboard) | `red/default` |
 | Primary Color (Area do Gestor) | `gestor/default` |
 | Text Default | `text/secondary` |
 | Text Secondary | `text/tertiary` |
-| Disabled Stroke | `stroke/default` |
-| Divider Color | `stroke/subtle` |
+| Disabled Stroke | `stroke/medium` |
+| Divider Color | `stroke/default` |
 
 ### Calendar (Popup)
 
@@ -414,7 +414,7 @@ Same tokens as Input. Always includes a label.
 |---|---|---|---|
 | Month/Year Label | Poppins Bold | 16 | `red/default` / `gestor/default` |
 | Navigation Arrows (icon fill) | — | — | `red/default` / `gestor/default` |
-| Divider (stroke) | — | — | `stroke/subtle` |
+| Divider (stroke) | — | — | `stroke/default` |
 
 #### Weekday Row
 
@@ -467,7 +467,7 @@ Same tokens as Input. Always includes a label.
 
 | Property | Value |
 |---|---|
-| Border right | `stroke/subtle` |
+| Border right | `stroke/default` |
 | Padding | `16` |
 | Item spacing | `24` |
 | Font | Poppins Medium 14 |
@@ -500,7 +500,7 @@ Same tokens as Input. Always includes a label.
 |---|---|
 | Enabled (Dashboard) | `red/default` |
 | Enabled (Area do Gestor) | `gestor/default` |
-| Disabled | `stroke/default` |
+| Disabled | `stroke/medium` |
 
 #### Label
 
@@ -554,8 +554,8 @@ Vertical stack, top to bottom:
 | Property | Value |
 |---|---|
 | Fill | `surface/raised` |
-| Stroke | `stroke/default`, 1px (external border) |
-| Internal dividers | `stroke/default`, 0.5px — last row has no bottom border |
+| Stroke | `stroke/medium`, 1px (external border) |
+| Internal dividers | `stroke/medium`, 0.5px — last row has no bottom border |
 | Corner Radius | `radius/16` |
 | Layout | Vertical |
 | Padding | `spacing/16` |
@@ -587,7 +587,7 @@ Vertical stack, top to bottom:
 
 | Element | Detail | Color | Typography Token |
 |---|---|---|---|
-| Divider | 2px, full width | `stroke/subtle` | — |
+| Divider | 2px, full width | `stroke/default` | — |
 | Row | Vertical, height `44`, padding `8` top/bottom | — | — |
 | Label | "Filtros aplicados:" | `text/secondary` | `Body Small/Regular | 400` |
 | Chips | Horizontal, gap `spacing/8`, no quantity limit | — | — |
@@ -624,7 +624,7 @@ Vertical stack, top to bottom:
 | Layout | Horizontal (columns stacked vertically) |
 | Row min height | `44` |
 | Cell padding H | `spacing/12` |
-| Row divider | Bottom, 0.5px, `stroke/default` |
+| Row divider | Bottom, 0.5px, `stroke/medium` |
 | Text | `text/secondary`, `Body Medium/Medium | 500` (14/500) |
 | Overflow | `text-overflow: ellipsis` — avoid horizontal scroll (see Column Width) |
 
