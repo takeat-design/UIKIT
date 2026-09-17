@@ -555,7 +555,7 @@ The table always sits inside a white card. Two nested layers:
 
 ```
 ┌ Card ─────────────────────────────────┐  surface/raised · stroke/default · padding 16
-│ ┌ Table Frame ──────────────────────┐ │  stroke/medium
+│ ┌ Table Frame ──────────────────────┐ │  stroke/default
 │ │ Toolbar                           │ │
 │ │ Header Groups · Column Headers    │ │
 │ │ Body                              │ │
@@ -579,8 +579,8 @@ The table always sits inside a white card. Two nested layers:
 | Property | Value |
 |---|---|
 | Fill | `surface/raised` |
-| Stroke | `stroke/medium`, 1px (external border) |
-| Internal dividers | `stroke/medium`, 0.5px — last row has no bottom border |
+| Stroke | `stroke/default`, 1px (external border) |
+| Internal dividers | `stroke/default`, 0.5px — last row has no bottom border |
 | Corner Radius | `radius/16`, content clipped to the radius |
 | Layout | Vertical |
 | Padding | `0` — each section (Toolbar, Pagination, cells) carries its own padding |
@@ -649,7 +649,7 @@ The table always sits inside a white card. Two nested layers:
 | Layout | Horizontal (columns stacked vertically) |
 | Row min height | `44` |
 | Cell padding H | `spacing/12` |
-| Row divider | Bottom, 0.5px, `stroke/medium` |
+| Row divider | Bottom, 0.5px, `stroke/default` |
 | Text | `text/secondary`, `Body Medium/Medium | 500` (14/500) |
 | Overflow | `text-overflow: ellipsis` — avoid horizontal scroll (see Column Width) |
 
@@ -747,7 +747,7 @@ Free, context-dependent. No type restriction.
 
 ### Pagination
 
-**Use:** Required when the table has more than 10 rows. Tables with 10 rows or fewer have no pagination.
+**Use:** Required when the table has more rows than one page holds — more than 10 on Desktop, more than 5 on Mobile.
 
 | Property | Value |
 |---|---|
@@ -759,12 +759,47 @@ Free, context-dependent. No type restriction.
 | Element | Detail | Color / Style | Typography Token |
 |---|---|---|---|
 | Record Count | "{start}–{end} de {total} registros" | `text/secondary` | `Body Medium/Regular | 400` |
-| Rows per page | Select, label "Linhas por página", height `32`, options 10 / 25 / 50 / 100, default 10 | See Dropdown (§3) | `Body Medium/Regular | 400` |
+| Rows per page | Select, label "Linhas por página", height `32`. Desktop: options 10 / 25 / 50 / 100, default 10. Mobile: options 5 / 10 / 25 / 50, default 5 | See Dropdown (§3) | `Body Medium/Regular | 400` |
 | Previous | `ChevronLeft`, 18px | `text/secondary` | — |
 | Page Buttons | 32 x 32 | Active: Filled (brand) · Inactive: Ghost (Text Button) | `Label Large/SemiBold | 600` |
 | Next | `ChevronRight`, 18px | `text/secondary` | — |
 
 > **Gestor / Multilojas:** swap `red/*` for `gestor/*` on brand buttons, the active page, and the Total Row fill. Export Button stays `teal/default`.
+
+### Mobile (≤ 900px)
+
+**There is no table on Mobile.** Each row becomes a card. Never rebuild the grid and never scroll it sideways.
+
+#### Card
+
+| Property | Value |
+|---|---|
+| Fill | `surface/raised` |
+| Stroke | `stroke/default`, 1px |
+| Corner Radius | `radius/12` |
+| Padding | `spacing/16` |
+| Gap between cards | `spacing/12` |
+
+#### Card content
+
+| Part | Detail |
+|---|---|
+| Identity | Value of the identity column, `text/primary`, `Label Large/SemiBold | 600`. Cell subtitle right below, `text/tertiary`, `Label Medium/Medium | 500` |
+| Status chip | Top right, beside the identity |
+| Fields | One line per column: label on the left (`text/tertiary`, `Label Medium/Medium | 500`), value on the right (`text/primary`, `Body Medium/Medium | 500`, `tabular-nums`) |
+| Field limit | Up to 5 fields visible; the rest go behind "Ver mais" inside the card |
+| Header groups | Become section labels inside the card — uppercase, `Label Medium/Medium | 500`, `text/secondary` |
+| Actions | Menu button (`MenuCircles`) top right, or full-width buttons at the bottom of the card |
+| Checkbox | Top left, before the identity |
+| Expandable row | Same chevron, at the end of the card; expanded content opens below, inside the card |
+| Total Row | First card in the list, filled `red/tint` / `gestor/tint`, values in `Body Medium/SemiBold | 600` |
+
+#### Around the list
+
+- **Sorting** moves to the toolbar as an "Ordenar por" select — there are no column headers to click.
+- **Search, filters and export** stay in the toolbar; icon-only except the main action.
+- **Pagination** starts at **5 cards per page** (options 5 / 10 / 25 / 50) and stacks: record count, rows per page, page controls.
+- **Selection Bar** stays floating at the bottom, full width, still up to 4 buttons.
 
 ### Off-Scale Warnings
 
@@ -776,7 +811,7 @@ Free, context-dependent. No type restriction.
 
 - Avoid horizontal scroll — truncate with ellipsis. Only allow it when the table has too many columns.
 - Minimum cell height is **44px**.
-- Pagination only when there are **more than 10 rows**; rows per page starts at **10**.
+- Pagination only when the rows exceed one page: **more than 10** on Desktop, **more than 5** on Mobile. Rows per page starts at **10** on Desktop and **5** on Mobile.
 - Export Button is **required**: always **teal**, **PDF** always, **CSV** only when requested.
 - Header groups and sort are optional, with no quantity limit.
 - Selection Bar has at most **4** Medium buttons.
