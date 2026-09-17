@@ -103,8 +103,8 @@ Dark mode strokes are white at varying opacity, not a flat color — same princi
 
 | Variable | Light | Dark | Use |
 |---|---|---|---|
-| `stroke/default` | `#EDEDED` | `#FFFFFF` · 12% | Default stroke: card borders, section dividers, full-width divider lines, floating surface borders (menus, drawer, selection bar) |
-| `stroke/medium` | `#C6C6C6` | `#FFFFFF` · 16% | Table borders and table dividers, disabled and read-only input borders, skeleton placeholders, disabled element borders |
+| `stroke/default` | `#EDEDED` | `#FFFFFF` · 12% | Default stroke: card borders, table borders and table dividers, section dividers, full-width divider lines, floating surface borders (menus, drawer, selection bar) |
+| `stroke/medium` | `#C6C6C6` | `#FFFFFF` · 16% | Disabled and read-only input borders, skeleton placeholders, disabled element borders |
 | `stroke/strong` | `#7A7A7A` | `#FFFFFF` · 24% | Default input border at rest; stronger separators |
 
 #### Brand
